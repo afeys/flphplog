@@ -11,7 +11,7 @@ class Log {
 
     static function add($msg, $type="info") {
 
-        $root = Config::getInstance()->get(Config::BASEPATH) . "/";
+        $root =  $_SERVER['DOCUMENT_ROOT'] . "/";
 
         $y = date('Y');
         $m = date('m');
