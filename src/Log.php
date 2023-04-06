@@ -15,7 +15,8 @@ class Log {
 
         $y = date('Y');
         $m = date('m');
-        $fileDest = $root . "logs/{$y}/{$m}/";
+        $d = date('d');
+        $fileDest = $root . "logs/{$y}/{$m}/{$d}/";
         if (!file_exists($fileDest)) {
             $dir = mkdir($fileDest, 0775, true);
         }
